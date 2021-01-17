@@ -1,10 +1,10 @@
 ## Inspiration
 
-**Quikslide** was ideated through a common problem that we had all faced in the past - creating effective slideshows under time constraints. Each team member agreed that a presentation generator that adaptively created slides based on an input script would be useful in many use cases, and thus Quikslide was born.
+**Quikslide** was ideated through a common problem that we had all faced in the past - creating effective slideshows under time constraints. Each team member agreed that a AI-Powered Presentation Generator that adaptively created slides based on an input script would be useful in many use cases, and thus Quikslide was born.
 
 ## What it does
 
-Quikslide uses multiple refined APIs in delivering the final product, a complete slideshow, into your hands. The app first takes in speech input, either typed from your own notes, or spoken directly into the browser and processed through _web speech_. The app then summarizes and tokenizes text in order to come up with headers and body text (bullet points) for slides, and searches web browsers for relevant images to use as guidance for each slide. The presentation is created, designed, and shared with the user for further usage and alteration. We don't want to impede the creative process, but rather help the users on their way.
+Quikslide uses multiple refined APIs in delivering the final product, a complete slideshow, into your hands. The app first takes in speech input, either typed from your own notes, or spoken directly into the browser and processed through _web speech_. The app then summarizes and tokenizes text in order to come up with headers and body text (bullet points) for slides, and searches web browsers for relevant images to use as guidance for each slide. The presentation is created, designed, and shared with the user for further usage and alteration. We don't want to impede the creative process, but rather help the users on their way. On average, an employee uses approximately 10 hours to create a slideshow. By using our service, they are able to optimize out the tedious portions, allowing them to make beautful and dynamic presentations in the fraction of the time.
 
 ## How we built it
 
@@ -12,7 +12,11 @@ We first use the Chrome Adaptive Speech Recognition API to understand the users 
 
 ## Challenges we ran into
 
-The whole process. We had never used many of the technologies we needed to make our app a reality and it was a challenge to bring together unknown APIs in a limited time frame to create the final product. Specifically, we had issues with managing API call limits—such as the Google Drive share API—and with creating the summarization functions on our own with NLP, a library none of us had experience with.
+As like any challenge, we faced any difficulties with a dynamic mindset. We had never used many of the technologies we needed to make our app a reality and it was a challenge to bring together unknown APIs in a limited time frame to create the final product. Specifically, we had issues with managing API call limits—such as the Google Drive share API—and with creating the summarization functions on our own with NLP, a library none of us had experience with. We also faced challenges tweaking the NLP Algorithms to deliver on high-precision analysis.
+
+## Accomplishments that we're proud of
+
+Quikslide's functionality is admirable for the early-stage development it has undergone. It can effectively seperate slides and categorize their titles based off of contextual tokenization that is done throughout the process. The slideshows are coherent and the formatting of the slide is consistent without overflows, or collisions. We're quite proud of the backend that was programmed on a really short time constraint, and we're confident that we're able to improve it for future purposes.
 
 ## Accomplishments that we're proud of
 
@@ -26,10 +30,13 @@ We also learned:
 
 - Flask
 - SQLAlchemy
+- Jinja
 - NLP (text summarization, keyword extraction)
-- Working with multiple APIs together
-- Working with the Google Slides API
+- Working with Azure Cognitive APIs
+- Working with the Google Docs and Slides APIs
 - Limiting API calls to avoid exceeding limits
+- Working with Domains and DNS
+- Power of working in a team
 
 ## What's next for QuikSlide
 
